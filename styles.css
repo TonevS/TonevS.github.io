@@ -1,21 +1,53 @@
-body{
-    font-size: 28px;
+/*Color theme, topbar, sidebar and content layout*/
+body{    
+    color: #56203D;
+    background-color: #CEBBC9;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #d2e4c4;
-    color: #706f6f;
 }
-
 header{
+    width: 100%;
+    position: fixed;
+    padding-left: 8px;  
+    right:0px;
+    top: 0px;
+    background-color: #DFF3E3;
     text-align: center;
 }
-
+.sidebar{
+    display:inline-block;
+    max-width:300px;
+    min-width:200px;
+    vertical-align: top;
+    
+}
+article{
+    font-size: 20px;
+    width: 70%;
+    margin-top:0px;
+    margin-left: auto;
+    margin-right: auto;
+    display:inline-block;
+}
+.filler-top{
+    min-height: 85px;
+}
+/*Fonts for every page*/
 h1{
-    font-size: 60px;
+    font-size: 35px;    
+}
+h1,h2{
+    margin-top:0px;
+    margin-bottom: 10px;
+}
+nav a{
+    font-size: 32px;
+}
+p{
+    font-size: 28px;
+}
+.sidebar ul li{
+    color: #56203D;
+    padding-bottom: 20px;
 }
 
-header p{
-    font-size: 40px;
-}
-h1, header p{
-    margin: 0 auto;
-}
+
