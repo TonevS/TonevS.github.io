@@ -49,7 +49,7 @@ p{
     font-size: 28px;
 }
 ul li{
-    padding-bottom: 20px;
+    padding-bottom:5px;
 }
 a{
     color: #56203D;
@@ -64,4 +64,5 @@ h3{
 }
 .section-faq li{
     font-size:25px;
+    padding-bottom: 20px;
 }
