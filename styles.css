@@ -40,9 +40,8 @@ h1{
 h1,h2{
     margin-top:0px;
     margin-bottom: 10px;
-<<<<<<< HEAD
 }
-nav a{
+nav a, div a{
     font-size: 32px;
 }
 p{
@@ -65,12 +64,6 @@ h3{
 .section-faq li{
     font-size:25px;
     padding-bottom: 20px;
-}
-nav a{
-    font-size: 32px;
-}
-p{
-    font-size: 28px;
 }
 .sidebar ul li{
     color: #56203D;
