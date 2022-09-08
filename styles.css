@@ -18,9 +18,9 @@ header{
     max-width:300px;
     min-width:200px;
     vertical-align: top;
+
     margin-right: 0;
     border-right: 5px solid #DFF3E3;
-    
 }
 article{
     font-size: 20px;
@@ -33,7 +33,6 @@ article{
 .filler-top{
     min-height: 85px;
 }
-
 /*Fonts for every page*/
 h1{
     font-size: 35px;    
@@ -41,6 +40,7 @@ h1{
 h1,h2{
     margin-top:0px;
     margin-bottom: 10px;
+<<<<<<< HEAD
 }
 nav a{
     font-size: 32px;
@@ -64,5 +64,15 @@ h3{
 }
 .section-faq li{
     font-size:25px;
+    padding-bottom: 20px;
+}
+nav a{
+    font-size: 32px;
+}
+p{
+    font-size: 28px;
+}
+.sidebar ul li{
+    color: #56203D;
     padding-bottom: 20px;
 }
