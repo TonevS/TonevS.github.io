@@ -46,6 +46,7 @@ nav a, div a{
 }
 p{
     font-size: 28px;
+    margin-top: 0px;
 }
 ul li{
     padding-bottom:5px;
