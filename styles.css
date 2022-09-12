@@ -1,76 +1,93 @@
-/*Color theme, topbar, sidebar and content layout*/
-body{    
-    color: #56203D;
-    background-color: #CEBBC9;
+/* Color theme and font */
+body {
+    color: #333333;
+    background-color: #f1f1ebd1;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 0;
+    margin: 0;
 }
+/* Top navigational bar and links bar properties */
 header{
+    position: sticky;
+    top:0;
     width: 100%;
-    position: fixed;
-    padding-left: 8px;  
-    right:0px;
-    top: 0px;
-    background-color: #DFF3E3;
+}
+.flex-container-nav, .flex-container-links{
+    display: flex;
+    flex-direction: row;
+    background-color: #333333;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.flex-container-nav a, .flex-container-links a{
+    display: block;
+    color: #ffffff;
     text-align: center;
+    padding: 16px 16px;
+    margin: auto;
+    text-decoration: none;
+    font-size:40px;    
 }
-.sidebar{
-    display:inline-block;
-    max-width:300px;
-    min-width:200px;
-    vertical-align: top;
-
-    margin-right: 0;
-    border-right: 5px solid #DFF3E3;
+.flex-container-nav a.active{
+    background-color: #b59016;
 }
-article{
+.flex-container-links a{
     font-size: 20px;
-    width: 70%;
-    margin-top:0px;
-    margin-left: auto;
-    margin-right: auto;
-    display:inline-block;
 }
-.filler-top{
-    min-height: 100px;
+/* Text and info properties */
+
+
+
+article {
+    font-size: 20px;
+    width: 100%;
+    display: flex;
 }
+
 /*Fonts for every page*/
-h1{
-    font-size: 35px;    
+h1 {
+    font-size: 35px;
 }
-h1,h2{
-    margin-top:0px;
+
+h1,
+h2 {
+    margin-top: 0px;
     margin-bottom: 10px;
 }
-nav a, div a{
-    font-size: 32px;
-}
-p{
+
+
+
+p {
     font-size: 28px;
     margin-top: 0px;
 }
-ul li{
-    padding-bottom:5px;
-}
-a{
-    color: #56203D;
-}
-.table-dashboard th, .table-dashboard tr td{
-    margin-left:25px;
-    padding-left:25px;
+
+
+
+
+
+.table-dashboard th,
+.table-dashboard tr td {
+    margin-left: 25px;
+    padding-left: 25px;
     font-size: 30px;
     background-color: aliceblue;
     border-style: solid;
     text-align: left;
     vertical-align: text-top;
 }
-h3{
-    font-size:35px;
+
+h3 {
+    font-size: 35px;
 }
-.section-faq li{
-    font-size:25px;
+
+.section-faq li {
+    font-size: 25px;
     padding-bottom: 20px;
 }
-.sidebar ul li{
+
+.sidebar ul li {
     color: #56203D;
     padding-bottom: 20px;
 }
