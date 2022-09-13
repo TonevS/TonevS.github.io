@@ -6,19 +6,59 @@ body {
     border: 0;
     margin: 0;
 }
-/* Top navigational bar and links bar properties */
+
+/* Different tag props */
 header{
     position: sticky;
     top:0;
     width: 100%;
+    z-index: 1;
 }
+main{
+    min-height:720px;
+}
+footer{
+    position:relative;
+    bottom: 0;
+    background-color: #3c3c3c;
+    margin-top: 50px;
+}
+
+/* Footer props */
+.footer-info{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+}
+.flex-container-footer-logos{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 45%;
+}
+.flex-container-footer-logos img{
+    max-width: 100%;
+    height: auto;
+    width: 50px;
+    padding: 15px;
+    display: block;
+}
+.footer-content{
+    color:white;    
+}
+
+/* Top navigational bar and links bar properties */
 .flex-container-nav, .flex-container-links{
     display: flex;
     flex-direction: row;
     background-color: #333333;
     overflow: hidden;
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 .flex-container-nav a, .flex-container-links a{
     display: block;
@@ -30,43 +70,69 @@ header{
     font-size:40px;    
 }
 .flex-container-nav a.active{
-    background-color: #b59016;
+    background-color: #b59016 !important;
+}
+.flex-container-nav a:hover{
+    background-color: #3f3f3f;
 }
 .flex-container-links a{
     font-size: 20px;
+    color: #8b8b86;
 }
+.flex-container-links a:hover{
+    color: #b59016;
+}
+
+/* Blog flex container and faq flex container props */
+.flex-container-blog-pages, .flex-container-faq-questions{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    top:30px;
+}
+.flex-container-blog-pages section, .flex-container-faq-questions section{
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    background-color: #dddddd;
+    border-radius: 5px;
+    border: solid;
+}
+.flex-container-blog-pages section a, .flex-container-blog-pages section summary{
+    position: relative;   
+    left: 10px;
+    text-decoration: none;    
+}
+.flex-container-blog-pages section a h3{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-right: 0;
+    color:#3c3c3c;
+    width: fit-content;
+}
+.flex-container-blog-pages section summary{
+    font-size: 25px;
+}
+
 /* Text and info properties */
 
-
-
-article {
-    font-size: 20px;
-    width: 100%;
-    display: flex;
-}
 
 /*Fonts for every page*/
 h1 {
     font-size: 35px;
 }
-
 h1,
 h2 {
     margin-top: 0px;
     margin-bottom: 10px;
 }
-
-
-
 p {
     font-size: 28px;
     margin-top: 0px;
 }
-
-
-
-
-
 .table-dashboard th,
 .table-dashboard tr td {
     margin-left: 25px;
@@ -77,17 +143,10 @@ p {
     text-align: left;
     vertical-align: text-top;
 }
-
 h3 {
     font-size: 35px;
 }
-
 .section-faq li {
     font-size: 25px;
-    padding-bottom: 20px;
-}
-
-.sidebar ul li {
-    color: #56203D;
     padding-bottom: 20px;
 }
