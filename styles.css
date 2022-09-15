@@ -55,6 +55,7 @@ footer{
 .flex-container-nav, .flex-container-links{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: #333333;
     overflow: hidden;
     margin: 0;
@@ -116,13 +117,32 @@ footer{
 .flex-container-blog-pages section summary{
     font-size: 25px;
 }
+.flex-container-faq-questions section h2,.flex-container-faq-questions section p{
+    margin-left:5px;
+}
+.flex-container-faq-questions section h2{
+    font-size: 30px;
+    margin-top:5px;
+}
+.flex-container-faq-questions section p{
+    font-size: 26px;
+}
+/* Main grid layout props */
 
-/* Text and info properties */
 
 
 /*Fonts for every page*/
 h1 {
-    font-size: 35px;
+    font-size: 50px;
+}
+h2{
+    font-size: 45px;
+}
+h3 {
+    font-size: 40px;
+}
+h4{
+    font-size: 38px;
 }
 h1,
 h2 {
@@ -130,7 +150,7 @@ h2 {
     margin-bottom: 10px;
 }
 p {
-    font-size: 28px;
+    font-size: 30px;
     margin-top: 0px;
 }
 .table-dashboard th,
@@ -143,10 +163,8 @@ p {
     text-align: left;
     vertical-align: text-top;
 }
-h3 {
-    font-size: 35px;
-}
-.section-faq li {
-    font-size: 25px;
-    padding-bottom: 20px;
+
+.figure-index img{
+    width: 200px;
+    height: auto;
 }
