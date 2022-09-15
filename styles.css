@@ -168,3 +168,7 @@ p {
     width: 200px;
     height: auto;
 }
+
+progress{
+    min-width: 500px;
+}
