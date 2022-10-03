@@ -5,34 +5,142 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: 0;
     margin: 0;
+    height: 100%;
 }
 
 /* Different tag props */
-header{
+header {
     position: sticky;
-    top:0;
+    top: 0;
     width: 100%;
     z-index: 1;
-}
-main{
-    min-height:720px;
-}
-footer{
-    position:relative;
-    bottom: 0;
-    background-color: #3c3c3c;
-    margin-top: 50px;
+    border-bottom: 1px solid#b59016;
 }
 
+main {
+    min-height: 720px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: #3c3c3c;
+    border-top: 1px solid#b59016;
+}
+
+/* Page flex layout */
+.flex-container-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container-main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.sidebar {
+    flex: 1 1 auto;
+    min-width: 225px;
+    max-width: 225px;
+
+    background-color: #3a3a3a;
+    border-right: 1px solid#b59016;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+/* Top navigational bar prop*/
+.flex-container-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #333333;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container-nav button {
+    background-color: #333333;
+    border: none;
+}
+
+.flex-container-nav * {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px 16px;
+    margin: auto;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.flex-container-nav a.active {
+    background-color: #b59016 !important;
+}
+
+.flex-container-nav *:hover {
+    background-color: #3f3f3f;
+}
+
+/* Side bar properties */
+.flex-container-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    min-height: 400px;
+    height: 720px;
+    background-color: #333333;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container-links a {
+    display: block;
+    color: #8b8b86;
+    text-align: center;
+    padding: 16px 16px;
+    margin: auto;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.flex-container-links a:hover {
+    color: #b59016;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.flex-container-nav button:active {
+    position: relative;
+    top: 3px;
+}
+
+/* Main grid layout props */
+/* TO DO IN FUTURE */
+
 /* Footer props */
-.footer-info{
+.footer-info {
     width: 50%;
     display: inline-block;
     text-align: center;
     position: relative;
     bottom: 30px;
 }
-.flex-container-footer-logos{
+
+.flex-container-footer-logos {
     display: inline-flex;
     flex-direction: row-reverse;
     overflow: hidden;
@@ -40,61 +148,99 @@ footer{
     padding: 0;
     width: 45%;
 }
-.flex-container-footer-logos img{
+
+.flex-container-footer-logos img {
     max-width: 100%;
     height: auto;
     width: 50px;
     padding: 15px;
     display: block;
 }
-.footer-content{
-    color:white;    
+
+.footer-content {
+    color: white;
 }
 
-/* Top navigational bar and links bar properties */
-.flex-container-nav, .flex-container-links{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+/* Grid table props */
+.grid-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 700px;
+}
+
+.grid-table thead,
+.grid-table tbody,
+.grid-table tr {
+    display: contents;
+}
+
+.grid-table thead th {
     background-color: #333333;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;    
-}
-.flex-container-nav a, .flex-container-links a{
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 16px 16px;
-    margin: auto;
-    text-decoration: none;
-    font-size:40px;    
-}
-.flex-container-nav a.active{
-    background-color: #b59016 !important;
-}
-.flex-container-nav a:hover{
-    background-color: #3f3f3f;
-}
-.flex-container-links a{
-    font-size: 20px;
-    color: #8b8b86;
-}
-.flex-container-links a:hover{
-    color: #b59016;
+    color: #dddddd;
 }
 
-/* Blog flex container and faq flex container props */
-.flex-container-blog-pages, .flex-container-faq-questions{
+.grid-table tbody td {
+    color: #dddddd;
+}
+
+/* Grid table data positioning */
+.grid-q1 {
+    grid-row: 2 / span 5;
+}
+
+.grid-q2 {
+    grid-row: 7 / span 2;
+}
+
+.grid-after-q2-oop {
+    grid-row: 7 / span 2;
+}
+
+.grid-q3 {
+    grid-row: 9 / span 4;
+}
+
+.grid-after-q3-fpr1 {
+    grid-row: 10 / span 3;
+}
+
+.grid-q4 {
+    grid-row: 13 / span 7;
+}
+
+.grid-after-q4-fpr2 {
+    grid-row: 13 / span 3;
+}
+
+.grid-after-q4-ppd-e {
+    grid-row: 18 / span 2;
+}
+
+.grid-column-auto {
+    grid-column: auto;
+}
+
+/* Grid table styling */
+.even-row td {
+    background-color: #8b8b86;
+}
+
+.odd-row td {
+    background-color: #6d6d6d;
+}
+
+/* Blog flex container props */
+.flex-container-blog-pages {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
     overflow: hidden;
     position: relative;
-    top:30px;
+    top: 10px;
 }
-.flex-container-blog-pages section, .flex-container-faq-questions section{
+
+.flex-container-blog-pages section {
     display: block;
     width: 90%;
     margin: 5px auto;
@@ -102,73 +248,90 @@ footer{
     border-radius: 5px;
     border: solid;
 }
-.flex-container-blog-pages section a, .flex-container-blog-pages section summary{
-    position: relative;   
+
+.flex-container-blog-pages section a,
+.flex-container-blog-pages section summary {
+    position: relative;
     left: 10px;
-    text-decoration: none;    
+    text-decoration: none;
 }
-.flex-container-blog-pages section a h3{
+
+.flex-container-blog-pages section a h3 {
     margin-top: 5px;
     margin-bottom: 20px;
     margin-right: 0;
-    color:#3c3c3c;
+    color: #3c3c3c;
     width: fit-content;
 }
-.flex-container-blog-pages section summary{
+
+.flex-container-blog-pages section summary {
     font-size: 25px;
 }
-.flex-container-faq-questions section h2,.flex-container-faq-questions section p{
-    margin-left:5px;
+
+
+/* Faq flex container props */
+.flex-container-faq-questions {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
 }
-.flex-container-faq-questions section h2{
+
+.flex-container-faq-questions details {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    background-color: #dddddd;
+    border-radius: 5px;
+    border: solid;
+}
+
+.flex-container-faq-questions details summary {
     font-size: 30px;
-    margin-top:5px;
+    margin: 15px 0;
+    padding: 10px;
 }
-.flex-container-faq-questions section p{
+.flex-container-faq-questions details p{
     font-size: 26px;
+    margin-left: 15px;
 }
-/* Main grid layout props */
-
-
 
 /*Fonts for every page*/
 h1 {
     font-size: 50px;
 }
-h2{
+
+h2 {
     font-size: 45px;
 }
+
 h3 {
     font-size: 40px;
 }
-h4{
+
+h4 {
     font-size: 38px;
 }
+
 h1,
 h2 {
     margin-top: 0px;
     margin-bottom: 10px;
 }
+
 p {
     font-size: 30px;
     margin-top: 0px;
 }
-.table-dashboard th,
-.table-dashboard tr td {
-    margin-left: 25px;
-    padding-left: 25px;
-    font-size: 20px;
-    background-color: aliceblue;
-    border-style: solid;
-    text-align: left;
-    vertical-align: text-top;
-}
 
-.figure-index img{
+.figure-index img {
     width: 200px;
     height: auto;
 }
 
-progress{
+progress {
     min-width: 500px;
 }

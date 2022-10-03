@@ -7,57 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
+    <script src="./app.js"></script>
 </head>
 
-<body>
+<body class="flex-container-body">
     <header>
         <nav class="flex-container-nav">
+            <button onclick="clickSidebar()">Links</button>
             <a class="active" href="index.html">Home</a>
             <a href="profile.html">Profile</a>
             <a href="dashboard.html">Dashboard</a>
             <a href="blog.html">Blog</a>
             <a href="faq.html">FAQ</a>
-        </nav>        
+        </nav>
     </header>
-    <main>
-        <article>
+    <main class="flex-container-main">
+        <aside id="sidebar" class="sidebar hidden">
+            <div class="flex-container-links">
+                <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf"
+                    target="_blank">Course and Examination Regulations</a>
+                <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf"
+                    target="_blank">Implementation Regulations</a>
+                <a href="https://glaze-donut-5a5.notion.site/Assignment-Specification-661c5ac5d7494328a58be61d00dd41e4"
+                    target="_blank">Assignment Specifications</a>
+                <a href="https://teams.microsoft.com/_?lm=deeplink&lmsrc=NeutralHomePageWeb&cmpid=WebSignIn&culture=en-us&country=us#/school/conversations/General?threadId=19:827654897ab746089c081f24aff1c984@thread.skype&ctx=channel"
+                    target="_blank">HBO-ICT Teams</a>
+                <a href="https://hz.osiris-student.nl/#/voortgang/" target="_blank">My Studyprogress</a>
+                <a href="https://github.com/HZ-HBO-ICT" target="_blank">GitHub section for HZ-ICT</a>
+            </div>
+        </aside>
+        <div class="content">
+
             <section>
                 <h1>Welcome to my page!</h1>
-                <p>My name is Antani and in this website you can see various things about me or the university where I study - HZ University of Applied Sciences.</p>
+                <p>My name is Antani and in this website you can see various things about me or the university where
+                    I study - HZ University of Applied Sciences.</p>
             </section>
             <section>
                 <h2>Why did I choose HBO-ICT?</h2>
-                <p>The main reason i chose this study programme is because I generally like to work with computers and the technology surrounding them. That makes ICT the perfect program for me.</p>
+                <p>The main reason i chose this study programme is because I generally like to work with computers
+                    and the technology surrounding them. That makes ICT the perfect program for me.</p>
             </section>
-            <figure class="figure-index">
-                <img src="./resources/images/it-picture1.jfif">
-                <img src="./resources/images/it-picture-2.jfif">
-            </figure>
-            <ul>
-                <li><a href="https://hz.nl/en/study-programmes/it" target="_blank">HBO-ICT Page</a></li>
-                <li><a href="https://www.google.com/maps/place/HZ+University+of+Applied+Sciences/@51.4951721,3.609511,21z/data=!4m5!3m4!1s0x47c490d0a317d04d:0xe74a28385302684c!8m2!3d51.4951426!4d3.6096064" target="_blank">The location of the Middelburg campus</a></li>
-            </ul>
-        </article>        
+            <section>
+                <figure class="figure-index">
+                    <img src="./resources/images/it-picture1.jfif">
+                    <img src="./resources/images/it-picture-2.jfif">
+                </figure>
+            </section>
+            <section>
+                <ul>
+                    <li><a href="https://hz.nl/en/study-programmes/it" target="_blank">HBO-ICT Page</a></li>
+                    <li><a href="https://www.google.com/maps/place/HZ+University+of+Applied+Sciences/@51.4951721,3.609511,21z/data=!4m5!3m4!1s0x47c490d0a317d04d:0xe74a28385302684c!8m2!3d51.4951426!4d3.6096064"
+                            target="_blank">The location of the Middelburg campus</a></li>
+                </ul>
+            </section>
+
+        </div>
     </main>
     <footer>
-        <div class="flex-container-links">
-            <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf"
-                target="_blank">Course and Examination Regulations</a>
-            <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf"
-                target="_blank">Implementation Regulations</a>
-            <a href="https://glaze-donut-5a5.notion.site/Assignment-Specification-661c5ac5d7494328a58be61d00dd41e4"
-                target="_blank">Assignment Specifications</a>
-            <a href="https://teams.microsoft.com/_?lm=deeplink&lmsrc=NeutralHomePageWeb&cmpid=WebSignIn&culture=en-us&country=us#/school/conversations/General?threadId=19:827654897ab746089c081f24aff1c984@thread.skype&ctx=channel"
-                target="_blank">HBO-ICT Teams</a>
-            <a href="https://hz.osiris-student.nl/#/voortgang/" target="_blank">My Studyprogress</a>
-            <a href="https://github.com/HZ-HBO-ICT" target="_blank">GitHub section for HZ-ICT</a>
-        </div>
-        <div class="footer-content">   
-            <div class="footer-info">TEMPORARY TEXT HERE!!!</div>         
+        <div class="footer-content">
+            <div class="footer-info">TEMPORARY TEXT HERE!!!</div>
             <div class="flex-container-footer-logos">
-                <a href="https://hz.nl" target="_blank"><img src="./resources/images/hz-logo.jpg" alt="A logo of HZ University of Applied Sciences"></a>
-                <a href="https://github.com" target="_blank"><img src="./resources/images/github-logo.png" alt="A logo of GitHub";></a>          
-            </div>            
+                <a href="https://hz.nl" target="_blank"><img src="./resources/images/hz-logo.jpg"
+                        alt="A logo of HZ University of Applied Sciences"></a>
+                <a href="https://github.com" target="_blank"><img src="./resources/images/github-logo.png"
+                        alt="A logo of GitHub" ;></a>
+            </div>
         </div>
     </footer>
 </body>

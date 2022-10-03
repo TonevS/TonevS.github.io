@@ -7,89 +7,100 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./app.js"></script>
 </head>
 
-<body>
+<body class="flex-container-body">
     <header>
         <nav class="flex-container-nav">
+            <button onclick="clickSidebar()">Links</button>
             <a href="index.html">Home</a>
             <a class="active" href="profile.html">Profile</a>
             <a href="dashboard.html">Dashboard</a>
             <a href="blog.html">Blog</a>
             <a href="faq.html">FAQ</a>
-        </nav>        
+        </nav>
     </header>
-    <main>
-        <article>
-            <section class="personal">
-                <h2>Info about me</h2>
-                <p>My full name is Antani Tonev. You can pronounce my name like Anthuny. I am from Bulgaria and
-                    currently 19
-                    years old.</p>
-                <p>In high school I studied extensively German and English. As for profiling subjects - Informatics and
-                    Mathematics. In Informatics I learned OOP in C# and queries in SQL and LINQ.
-                    I wanted to further my stuides and I think HZ is a great choice for me personally.
-                </p>
-            </section>
-            <section class="extra-curricular">
-                <h2>What I do in my free time</h2>
-                <p>
-                    In my spare time I usually play games and browse through social media. Also an avid fan of Light
-                    Novels and some eastern genres (Xianxia,Huanhuan,Wuxia).
-                    Here's a list about some of my favourite games and a description:
-                </p>
-            </section>
-            <section>
-                <ul>
-                    <li>
-                        <p>osu! - a rhythm game where you click circles</p>
-                    </li>
-                    <li>
-                        <p>Path of Exile - an ARPG that's so complex you'll play for years and you won't know everything
-                        </p>
-                    </li>
-                    <li>
-                        <p>Rocket League - basically football with flying cars</p>
-                    </li>
-                    <li>
-                        <p>Lobotomy Corporation - a managing-style game where you gather energy from abnormalities</p>
-                    </li>
-                    <li>
-                        <p>Assassin's Creed Games - too many to list but you've probably heard about them</p>
-                    </li>
-                    <li>
-                        <p>The Room Trilogy - puzzle games that will make your brain click</p>
-                    </li>
-                </ul>
-                <figure>
-                    <img src="resources/images/pcmr.jpg"
-                        alt="Face with a hair being blown in a yellow background called PC Masterrace.">
-                    <figcaption>PC Masterrace</figcaption>
-                </figure>
-            </section>
+    <main class="flex-container-main">
+        <aside id="sidebar" class="sidebar hidden">
+            <div class="flex-container-links">
+                <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf"
+                    target="_blank">Course and Examination Regulations</a>
+                <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf"
+                    target="_blank">Implementation Regulations</a>
+                <a href="https://glaze-donut-5a5.notion.site/Assignment-Specification-661c5ac5d7494328a58be61d00dd41e4"
+                    target="_blank">Assignment Specifications</a>
+                <a href="https://teams.microsoft.com/_?lm=deeplink&lmsrc=NeutralHomePageWeb&cmpid=WebSignIn&culture=en-us&country=us#/school/conversations/General?threadId=19:827654897ab746089c081f24aff1c984@thread.skype&ctx=channel"
+                    target="_blank">HBO-ICT Teams</a>
+                <a href="https://hz.osiris-student.nl/#/voortgang/" target="_blank">My Studyprogress</a>
+                <a href="https://github.com/HZ-HBO-ICT" target="_blank">GitHub section for HZ-ICT</a>
+            </div>
+        </aside>
+        <div class="content">
 
-        </article>
+                <section>
+                    <h2>Info about me</h2>
+                    <p>My full name is Antani Tonev. You can pronounce my name like Anthuny. I am from Bulgaria and
+                        currently 19
+                        years old.</p>
+                    <p>In high school I studied extensively German and English. As for profiling subjects - Informatics
+                        and
+                        Mathematics. In Informatics I learned OOP in C# and queries in SQL and LINQ.
+                        I wanted to further my stuides and I think HZ is a great choice for me personally.
+                    </p>
+                </section>
+                <section>
+                    <h2>What I do in my free time</h2>
+                    <p>
+                        In my spare time I usually play games and browse through social media. Also an avid fan of Light
+                        Novels and some eastern genres (Xianxia,Huanhuan,Wuxia).
+                        Here's a list about some of my favourite games and a description:
+                    </p>
+                </section>
+                <section>
+                    <ul>
+                        <li>
+                            <p>osu! - a rhythm game where you click circles</p>
+                        </li>
+                        <li>
+                            <p>Path of Exile - an ARPG that's so complex you'll play for years and you won't know
+                                everything
+                            </p>
+                        </li>
+                        <li>
+                            <p>Rocket League - basically football with flying cars</p>
+                        </li>
+                        <li>
+                            <p>Lobotomy Corporation - a managing-style game where you gather energy from abnormalities
+                            </p>
+                        </li>
+                        <li>
+                            <p>Assassin's Creed Games - too many to list but you've probably heard about them</p>
+                        </li>
+                        <li>
+                            <p>The Room Trilogy - puzzle games that will make your brain click</p>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <figure>
+                        <img src="resources/images/pcmr.jpg"
+                            alt="Face with a hair being blown in a yellow background called PC Masterrace.">
+                        <figcaption>PC Masterrace</figcaption>
+                    </figure>
+                </section>
 
+        </div>
     </main>
     <footer>
-        <div class="flex-container-links">
-            <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf"
-                target="_blank">Course and Examination Regulations</a>
-            <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf"
-                target="_blank">Implementation Regulations</a>
-            <a href="https://glaze-donut-5a5.notion.site/Assignment-Specification-661c5ac5d7494328a58be61d00dd41e4"
-                target="_blank">Assignment Specifications</a>
-            <a href="https://teams.microsoft.com/_?lm=deeplink&lmsrc=NeutralHomePageWeb&cmpid=WebSignIn&culture=en-us&country=us#/school/conversations/General?threadId=19:827654897ab746089c081f24aff1c984@thread.skype&ctx=channel"
-                target="_blank">HBO-ICT Teams</a>
-            <a href="https://hz.osiris-student.nl/#/voortgang/" target="_blank">My Studyprogress</a>
-            <a href="https://github.com/HZ-HBO-ICT" target="_blank">GitHub section for HZ-ICT</a>
-        </div>
-        <div class="footer-content">   
-            <div class="footer-info">TEMPORARY TEXT HERE!!!</div>         
+        <div class="footer-content">
+            <div class="footer-info">TEMPORARY TEXT HERE!!!</div>
             <div class="flex-container-footer-logos">
-                <a href="https://hz.nl" target="_blank"><img src="./resources/images/hz-logo.jpg" alt="A logo of HZ University of Applied Sciences"></a>
-                <a href="https://github.com" target="_blank"><img src="./resources/images/github-logo.png" alt="A logo of GitHub";></a>          
-            </div>            
+                <a href="https://hz.nl" target="_blank"><img src="./resources/images/hz-logo.jpg"
+                        alt="A logo of HZ University of Applied Sciences"></a>
+                <a href="https://github.com" target="_blank"><img src="./resources/images/github-logo.png"
+                        alt="A logo of GitHub" ;></a>
+            </div>
         </div>
     </footer>
 </body>

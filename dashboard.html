@@ -7,27 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
+    <script src="./app.js"></script>
 </head>
 
-<body>
-
+<body class="flex-contaniner-body">
     <header>
         <nav class="flex-container-nav">
-            <a  href="index.html">Home</a>
+            <button onclick="clickSidebar()">Links</button>
+            <a href="index.html">Home</a>
             <a href="profile.html">Profile</a>
             <a class="active" href="dashboard.html">Dashboard</a>
             <a href="blog.html">Blog</a>
             <a href="faq.html">FAQ</a>
         </nav>
-        
     </header>
 
-
-    <main>
-
-        <article>
-            <section>
-                <table class="table-dashboard">
+    <main class="flex-container-main">
+        <aside id="sidebar" class="sidebar hidden">
+            <div class="flex-container-links">
+                <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf"
+                    target="_blank">Course and Examination Regulations</a>
+                <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf"
+                    target="_blank">Implementation Regulations</a>
+                <a href="https://glaze-donut-5a5.notion.site/Assignment-Specification-661c5ac5d7494328a58be61d00dd41e4"
+                    target="_blank">Assignment Specifications</a>
+                <a href="https://teams.microsoft.com/_?lm=deeplink&lmsrc=NeutralHomePageWeb&cmpid=WebSignIn&culture=en-us&country=us#/school/conversations/General?threadId=19:827654897ab746089c081f24aff1c984@thread.skype&ctx=channel"
+                    target="_blank">HBO-ICT Teams</a>
+                <a href="https://hz.osiris-student.nl/#/voortgang/" target="_blank">My Studyprogress</a>
+                <a href="https://github.com/HZ-HBO-ICT" target="_blank">GitHub section for HZ-ICT</a>
+            </div>
+        </aside>
+        <div class="content">
+            <table class="grid-table">
+                <thead>
                     <tr>
                         <th>Quartile</th>
                         <th>Course</th>
@@ -35,140 +47,134 @@
                         <th>ECs</th>
                         <th>Grades</th>
                     </tr>
-                    <tr>
-                        <td rowspan="5">1</td>
+                </thead>
+                <tbody>
+                    <tr class="odd-row">
+                        <td class="grid-q1">1</td>
                         <td>CSB</td>
                         <td>Written knowledge test</td>
                         <td>5</td>
                         <td>P/NP</td>
                     </tr>
-                    <tr>
+                    <tr class="odd-row">
                         <td>PCO</td>
                         <td>Assessment website</td>
                         <td>2.5</td>
                         <td>P/NP</td>
                     </tr>
-                    <tr>
+                    <tr class="odd-row">
                         <td>PBA</td>
                         <td>Case study exam</td>
                         <td>5</td>
                         <td>P/NP</td>
                     </tr>
-                    <tr>
+                    <tr class="odd-row">
                         <td>PPW1</td>
                         <td>Portfolio</td>
                         <td>1.25</td>
                         <td>P/NP</td>
                     </tr>
-                    <tr>
+                    <tr class="odd-row">
                         <td>ITP1</td>
                         <td>Portfolio</td>
                         <td>1.25</td>
                         <td>P/NP</td>
                     </tr>
-                    <tr>
-                        <td rowspan="2">2</td>
-                        <td rowspan="2">OOP</td>
+                    <tr class="even-row">
+                        <td class="grid-q2">2</td>
+                        <td class="grid-after-q2-oop grid-column-auto">OOP</td>
                         <td>Presentation</td>
                         <td>5</td>
                         <td>P/NP</td>
                     </tr>
-                    <tr>
+                    <tr class="even-row">
                         <td>Case study exam</td>
                         <td>5</td>
                         <td>P/NP</td>
                     </tr>
-                    <tr>
-                        <td rowspan="4">3</td>
+                    <tr class="odd-row">
+                        <td class="grid-q3">3</td>
                         <td>FDE1</td>
                         <td>Case study exam</td>
                         <td>5</td>
                         <td>P/NP</td>
                     </tr>
-                    <tr>
-                        <td rowspan="3">FPR1</td>
+                    <tr class="odd-row">
+                        <td class="grid-after-q3-fpr1 grid-column-auto">FPR1</td>
                         <td>Criterium based interview</td>
                         <td>2.5</td>
                         <td>P/NP</td>
                     </tr>
-                    <tr>
+                    <tr class="odd-row">
                         <td>Assignment</td>
                         <td>2.5</td>
                         <td>P/NP</td>
                     </tr>
-                    <tr>
+                    <tr class="odd-row">
                         <td>Case study exam</td>
                         <td>2.5</td>
                         <td>P/NP</td>
                     </tr>
-                    <tr>
-                        <td rowspan="7">4</td>
-                        <td rowspan="3">FPR2</td>
+                    <tr class="even-row">
+                        <td class="grid-q4">4</td>
+                        <td class="grid-after-q4-fpr2 grid-column-auto">FPR2</td>
                         <td>Final delivery</td>
                         <td>2.5</td>
                         <td>P/NP</td>
                     </tr>
-                    <tr>
+                    <tr class="even-row">
                         <td>Report of acceptance</td>
                         <td>2.5</td>
                         <td>P/NP</td>
                     </tr>
-                    <tr>
+                    <tr class="even-row">
                         <td>IT Development portfolio</td>
                         <td>5</td>
                         <td>P/NP</td>
                     </tr>
-                    <tr>
+                    <tr class="even-row">
                         <td>PIW</td>
                         <td>Portfolio</td>
                         <td>1.25</td>
                         <td>P/NP</td>
                     </tr>
-                    <tr>
+                    <tr class="even-row">
                         <td>ITP2</td>
                         <td>Portfolio</td>
                         <td>1.25</td>
                         <td>P/NP</td>
                     </tr>
-                    <tr>
-                        <td rowspan="2">PPD-E</td>
+                    <tr class="even-row">
+                        <td class="grid-after-q4-ppd-e grid-column-auto">PPD-E</td>
                         <td>English Test</td>
                         <td>0.625</td>
                         <td>P/NP</td>
                     </tr>
-                    <tr>
+                    <tr class="even-row">
                         <td>Criterium based interview</td>
                         <td>11.875</td>
                         <td>P/NP</td>
                     </tr>
-                </table>
-                <progress id="progress-bar" value="30" max="60">50%</progress><label for="progress-bar">30/60 ECs</label>
+                </tbody>
+            </table>
+            <progress id="progress-bar" value="30" max="60">50%</progress><label for="progress-bar">30/60
+                ECs</label>>
+        </div>
 
-
-            </section>
-        </article>
     </main>
     <footer>
-        <div class="flex-container-links">
-            <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf"
-                target="_blank">Course and Examination Regulations</a>
-            <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf"
-                target="_blank">Implementation Regulations</a>
-            <a href="https://glaze-donut-5a5.notion.site/Assignment-Specification-661c5ac5d7494328a58be61d00dd41e4"
-                target="_blank">Assignment Specifications</a>
-            <a href="https://teams.microsoft.com/_?lm=deeplink&lmsrc=NeutralHomePageWeb&cmpid=WebSignIn&culture=en-us&country=us#/school/conversations/General?threadId=19:827654897ab746089c081f24aff1c984@thread.skype&ctx=channel"
-                target="_blank">HBO-ICT Teams</a>
-            <a href="https://hz.osiris-student.nl/#/voortgang/" target="_blank">My Studyprogress</a>
-            <a href="https://github.com/HZ-HBO-ICT" target="_blank">GitHub section for HZ-ICT</a>
-        </div>
-        <div class="footer-content">   
-            <div class="footer-info">TEMPORARY TEXT HERE!!!</div>         
+
+        <div class="footer-content">
+            <div class="footer-info">TEMPORARY TEXT HERE!!!</div>
             <div class="flex-container-footer-logos">
-                <a href="https://hz.nl" target="_blank"><img src="./resources/images/hz-logo.jpg" alt="A logo of HZ University of Applied Sciences"></a>
-                <a href="https://github.com" target="_blank"><img src="./resources/images/github-logo.png" alt="A logo of GitHub";></a>          
-            </div>            
+                <a href="https://hz.nl" target="_blank"><img src="./resources/images/hz-logo.jpg"
+                        alt="A logo of HZ University of Applied Sciences"></a>
+                <a href="https://github.com" target="_blank"><img src="./resources/images/github-logo.png"
+                        alt="A logo of GitHub" ;></a>
+            </div>
         </div>
     </footer>
+    
 </body>
 
 </html>
