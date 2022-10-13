@@ -55,6 +55,8 @@ footer {
 
 .content {
     flex: 1 1 auto;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 
 /* Top navigational bar prop*/
@@ -132,21 +134,16 @@ footer {
 /* TO DO IN FUTURE */
 
 /* Footer props */
-.footer-info {
-    width: 50%;
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    bottom: 30px;
-}
+
 
 .flex-container-footer-logos {
-    display: inline-flex;
+    display: flex;
     flex-direction: row-reverse;
     overflow: hidden;
     margin: 0;
+    margin-bottom: 15px;
+    margin-right: 15px;
     padding: 0;
-    width: 45%;
 }
 
 .flex-container-footer-logos img {
@@ -157,15 +154,13 @@ footer {
     display: block;
 }
 
-.footer-content {
-    color: white;
-}
-
 /* Grid table props */
 .grid-table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    max-width: 700px;
+    min-width: 700px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .grid-table thead,
@@ -223,6 +218,13 @@ footer {
 /* Grid table styling */
 .even-row td {
     background-color: #8b8b86;
+}
+
+td {
+    padding-bottom: 15px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .odd-row td {
@@ -284,6 +286,7 @@ footer {
     display: block;
     width: 90%;
     margin: 5px auto;
+    margin-bottom: 20px;
     background-color: #dddddd;
     border-radius: 5px;
     border: solid;
@@ -294,7 +297,8 @@ footer {
     margin: 15px 0;
     padding: 10px;
 }
-.flex-container-faq-questions details p{
+
+.flex-container-faq-questions details p {
     font-size: 26px;
     margin-left: 15px;
 }
@@ -317,7 +321,11 @@ h4 {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-top: 0px;
     margin-bottom: 10px;
 }
@@ -327,11 +335,21 @@ p {
     margin-top: 0px;
 }
 
+/* Other props */
 .figure-index img {
-    width: 200px;
+    width: 400px;
     height: auto;
+    left: 40%;
 }
 
 progress {
     min-width: 500px;
+    width: 800px;
+}
+
+li{
+    font-size: 25px;
+}
+a{
+    color:#333333;
 }
